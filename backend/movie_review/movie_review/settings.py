@@ -105,7 +105,7 @@ WSGI_APPLICATION = 'movie_review.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # or sqlite3 if preferred
-        'NAME': env('Database name'),
+        'NAME': env('name'),
         'USER': env('User'),
         'PASSWORD': env('Password'),
         'HOST': 'mysql-3d6aa451-nithishrao355-2584.h.aivencloud.com',
