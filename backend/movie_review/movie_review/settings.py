@@ -83,10 +83,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'movie_review.wsgi.application'
 CORS_ALLOW_CREDENTIALS=True
 ALLOWED_HOSTS = ["*"]
-CORS_ALLOW_ALL_ORIGINS=["*"]
-CSRF_TRUSTED_ORIGINS=[
-    "*"
-]
+CORS_ALLOW_ALL_ORIGINS=True
+# CSRF_TRUSTED_ORIGINS=[
+    
+# ]
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
