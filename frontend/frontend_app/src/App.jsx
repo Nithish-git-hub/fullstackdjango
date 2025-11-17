@@ -9,7 +9,7 @@ import Profile from "./components/Profile";
 import AdminDashboard from "./components/AdminDashboard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
+       <Footer />
     </Router>
   );
 }

@@ -212,7 +212,7 @@ export default function MovieDetail() {
               </div>
 
               {/* Edit/Delete buttons shown only when backend set r.can_modify true */}
-              {token && r.can_modify && (
+              {token &&  (
                 <div>
                   <button className="btn btn-sm btn-outline-secondary me-2" onClick={() => startEdit(r)}>
                     Edit
@@ -292,3 +292,8 @@ export default function MovieDetail() {
     </div>
   );
 }
+
+
+
+
+

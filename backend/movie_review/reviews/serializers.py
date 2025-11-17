@@ -1,15 +1,3 @@
-# from rest_framework import serializers
-# from .models import Review
-# from movies.models import Movie
-# class ReviewSerializer(serializers.ModelSerializer):
-#     user = serializers.StringRelatedField(read_only=True)
-#     movie = serializers.PrimaryKeyRelatedField(queryset=Movie.objects.all())
-#     class Meta:
-#         model = Review
-#         fields = '__all__'
-#         depth=1
-
-
 
 from rest_framework import serializers
 from .models import Review
@@ -44,6 +32,7 @@ class ReviewSerializer(serializers.ModelSerializer):
         return getattr(request.user, 'role', None) == 'admin'
 
     
+
 
 
 

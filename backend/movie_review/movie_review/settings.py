@@ -32,10 +32,12 @@ SECRET_KEY = 'django-insecure-6x7enh5=7tr)fqv(y7_7y98c9jih&7x+p(^=)1(1%0bse12ysn
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+CORS_ALLOW_CREDENTIALS=True
 ALLOWED_HOSTS = ["*"]
-
-
+CORS_ALLOW_ALL_ORIGINS=["*"]
+# CSRF_TRUSTED_ORIGINS=[
+#     "*"
+# ]
 # Application definition
 
 INSTALLED_APPS = [
@@ -109,7 +111,7 @@ CORS_ALLOW_ALL_ORIGINS=True
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # or sqlite3 if preferred
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': env('name'),
         'USER': env('User'),
         'PASSWORD': env('Password'),
