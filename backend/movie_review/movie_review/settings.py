@@ -14,6 +14,7 @@ from pathlib import Path
 from datetime import timedelta
 import environ
 import os
+import cloudinary_storage
 BASE_DIR = Path(__file__).resolve().parent.parent
 # Initialize environment variables
 env = environ.Env()
@@ -51,7 +52,9 @@ INSTALLED_APPS = [
       'corsheaders',
         'users',
       'movies', 
-      'reviews'
+      'reviews',
+      'cloudinary',
+      'cloudinary_storage'
 ]
 
 MIDDLEWARE = [
@@ -182,3 +185,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
+
+
+CLOUDINARY_STORAGE={
+    'CLOUD_NAME':'Root',
+    'API_KEY':'233325438463362',
+    'API_SECRET':'-huXqBVXQkrpfLkAy8Kr6RGDnvE'
+}
+
+DEFAULT_FILE_STORAGE='cloudinary_storage.storage.MediaCloudinaryStorage'
