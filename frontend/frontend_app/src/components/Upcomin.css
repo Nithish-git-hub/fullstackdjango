@@ -1,0 +1,43 @@
+.upcoming-movies-wrap {
+  padding: 0 8px;
+}
+
+/* small spacing inside each slick slide */
+.slick-slide {
+  padding: 0 8px;
+}
+
+/* card and image sizing */
+.movie-card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card-image-wrap {
+  width: 100%;
+  height: 300px;
+  display: block;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* mobile tweaks */
+@media (max-width: 768px) {
+  .card-image-wrap {
+    height: 200px;
+  }
+}
+
+/* optional: reduce dot size and spacing on mobile */
+@media (max-width: 480px) {
+  .slick-dots li button {
+    height: 8px;
+    width: 8px;
+  }
+}
